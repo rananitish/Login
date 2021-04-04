@@ -1,38 +1,188 @@
+@font-face {
+  font-family: 'myFirstFont';
+  src: url(./proximanova-regular.woff) format('woff');
+}
 .App {
   text-align: center;
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+  word-break: break-word;
+  font-weight: 600;
+  line-height: 1.4rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loginpage{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  font-family: 'myFirstFont';
+  
+}
+.dine-overlay{
+  background-image: linear-gradient(to right bottom,#00000063,#00000063) ,url(./dine.jpg);
+  
+  
+  
+  background-size: cover;
+  
+  background-position: center;
+  
+  position: relative;
+   width: 50%;
+   height: 100vh;
+   left: 0;
+   top: 0;
+  
+   width: 54vw;
+   height: 100vh;
+   
+  
+}
+.automate-takeaway{
+
+    font-weight: 400;
+    font-size: 24px;
+
+    padding-top: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+p{
+  color: #fff;
+  margin-left: 2rem;
+  font-size: 16px;
+}
+a {
+  background: 0 0;
+  text-decoration: none;
+}
+a.login-box {
+  margin-left: 2rem;
+  font-size: .9rem;
+  font-weight: 400;
+  border: 1px solid #fff;
+  padding: .8rem 1.2rem;
+  margin-top: 1rem;
+  display: inline-block;
+  color: #fff;
+  transition: .3s;}
+  a.login-box:hover {
+    color: #4f7be8;
+    border: 1px solid #4f7be8;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+
+
+
+.log-section{
+  width: 50%;
+  position: relative;
+  margin-top: 8rem;
+
+}
+.log-details{
+  width: 30rem;
+  margin: 5rem auto 1rem;
+}
+.form-element-wrapper{
+  margin: 2rem 0 .5rem;
+  padding: 0;
+  display: block;
+  position: relative;
+}
+.form-element-wrapper input{
+  font-weight: 400;
+  color: #000;
+  opacity: 1;
+  border: 0;
+      
+  border-bottom: .0625rem solid #e7e4e4;
+  height: 2.625rem;}
+
+  .form-input {
+    background-color: transparent;
+    line-height: normal;
+    
+    outline: 0;
+    
+    width: 100%;
+    font-size: 0.93rem;
+    margin: 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+.form-element-wrapper input:focus {
+  border-bottom: .0625rem solid #132ba3;
+  height: 2.625rem;
+  
+  
+  
+}
+.form-element-wrapper input:not(:placeholder-shown) + label, .form-element-wrapper input:focus + label {
+  font-size: 0.93rem;
+  opacity: 1;
+  
+  
+  transform: translateY(-158%);}
+  input:focus::placeholder {
+    color: transparent;
   }
-  to {
-    transform: rotate(360deg);
+
+  .form-label{
+    color: #7e808c;
+   
+   position: absolute;
+   bottom: 0.8125rem;
+   left: 0.0rem;
+   font-size: 0.93rem;
+   cursor: text;
+   -webkit-transition: .2s ease;
+   -o-transition: .2s ease;
+   transition: .2s ease;
+   width: 100%;
+   text-transform: capitalize;
+   opacity: 0;
+
+   pointer-events: none;
   }
+ .form-label :focus {
+    outline-color: transparent;
+    opacity: 1;
+    
+    
+    outline-style: none;}
+
+    .edit-receipt-btn {
+      background: #20449c;
+      color: #fff;
+      bottom: 0;
+      display: block;
+      width: 96%;
+      text-align: center;
+      left: 0;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      padding: .8rem;
+      font-weight: 400;
+      font-size: .8rem;
+      border: 1px solid #20449c;
+      transition: .3s;
+      clear: both;
+  }
+  a:active, a:hover {
+    outline: 0;
+}
+.edit-receipt-btn:hover {
+  color: #20449c;
+  border: 1px solid #20449c;
+  background: #fff;
 }
