@@ -128,8 +128,9 @@ a.login-box {
   
 }
 .form-element-wrapper input:not(:placeholder-shown) + label, .form-element-wrapper input:focus + label {
-  font-size: 0.93rem;
+  font-size: 0.76rem;
   opacity: 1;
+  height: 1rem;
   
   
   transform: translateY(-158%);}
@@ -157,6 +158,7 @@ a.login-box {
  .form-label :focus {
     outline-color: transparent;
     opacity: 1;
+    
     
     
     outline-style: none;}
